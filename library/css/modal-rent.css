@@ -1,5 +1,4 @@
-/*Reset style*/
-.modal-content-rent{
+.popup{
   padding: 24px 0;
 }
 .padding-modal{
@@ -114,7 +113,7 @@
   left: 35%;
   transform: translate(-50%);
 }
-.modal-content-rent>div:nth-child(4){
+.popup>div:nth-child(4){
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -123,6 +122,7 @@
   color: #FE616B;
   margin-right: 88px;
   margin-bottom: 14px;
+  text-align: right;
 }
 .surplus-rent{
   display: flex;
@@ -199,9 +199,7 @@
   outline: none;
   border: none;
 }
-
-/* The Modal (background) */
-#rent{
+.button {
   border: none;
   padding: 10px 24px;
   width: 90px;
@@ -217,39 +215,61 @@
   color: #FFFFFF;
   cursor: pointer;
   margin-right: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.button:hover {
+
 }
 
-/* Modal Content */
-.modal-content-rent {
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+  /*transition: opacity 500ms;*/
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+  padding-top: 100px;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
   background: #FFFFFF;
   border-radius: 24px;
   margin: auto;
   max-width: 628px;
+  transition: all 5s ease-in-out;
 }
-
-/* The Close Button */
-.close {
+.popup .popup-close {
+  transition: all 200ms;
+  text-decoration: none;
   color: #650107;
   font-size: 40px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.popup-close:hover,
+.popup-close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
 }
+
+/*.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}*/

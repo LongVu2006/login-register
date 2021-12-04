@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="library/css/follow.css">
 	<link rel="stylesheet" href="library/css/pagination.css">
 	<link rel="stylesheet" href="library/css/modal.css">
+	<link rel="stylesheet" href="library/css/modal-rent.css">
 </head>
 <body>
 			<!-- Div tổng -->
@@ -106,8 +107,48 @@
 							<div class="flex-donate">
 								<div class="button-donate">
 <!-- Thuê -->
-								<button id="rent">Thuê</button>
-																											
+								<button class="button" onclick="window.location.href='#popup1'">Thuê</button>
+
+								<div id="popup1" class="overlay">
+									<div class="popup">
+										<div class="rent-but padding-modal">
+											<div id="name-rent">Thuê</div>
+											<a class="popup-close" href="#">&times;</a>
+										</div>
+										<div class="layout-modal-rent">
+									        <div class="image-modal-rent">
+									          	<img src="image/modal3.png">
+									          	<div class="text-image-rent">
+									          		<div>Trần Thị Thùy Linh</div>
+									          		<div>50,000 <span>VNĐ</span></div>
+									          	</div>
+									        </div>
+									    </div>
+										<div class="donation-rent padding-modal">
+									        <div>Số tiền muốn Donate</div>
+									        <div class="time-rent">
+									        	<div>10 <span>Giờ</span></div>
+									        	<div class="sign">-</div>
+									        	<div class="sign">+</div>
+									        </div>
+								     	</div>
+								     	<div>200,000 <span>VNĐ</span></div>
+								      	<div class="surplus-rent padding-modal">
+									        <div>Số dư hiện tại</div>
+									        <div>0 <span>VNĐ</span></div>
+									        <div id="plus-rent">+</div>
+									    </div>
+										<div class="add-message-rent padding-modal">
+								        <form id="add-message-rent">
+								          <input type="text" placeholder="Thêm lời nhắn">
+								        </form>
+								      	</div>
+								      	<div class="rent-button padding-modal">
+								        	<button id="send-rent">Thuê</button>
+								      	</div>
+									</div>
+								</div>
+																																			
 <!-- Donate -->
 								<div>
 									<button id="donate">Donate</button>
