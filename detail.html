@@ -6,6 +6,11 @@
 	<title></title>
 	<link rel="icon" href="image/logo.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+	<!-- css tab -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end css tab -->
 	<link rel="stylesheet" href="library/css/banner-detail.css">
 	<link rel="stylesheet" href="library/css/dropdown.css">
 	<link rel="stylesheet" href="library/css/layout-detail.css">
@@ -33,11 +38,16 @@
 
 <!-- Menu -->
 				<div class="menu-header">
+					<div class="name-menu"><h4>Thêm người chơi</h4></div>
+
 					<div class="item">
+
 						<ul class="menu">
+							
 							<li><a href="user.html" id="home-page">Trang Chủ</a></li>
 							<li><a href="#" class="active" id="hire-players">Thuê người chơi</a></li>
 							<li><a href="#" id="watching">Đang theo dõi</a></li>
+
 						</ul>
 					</div>
 				</div>
@@ -90,7 +100,7 @@
 					<div class="avatar"><img src="image/avatar.svg"></div>
 					<div class="contact-page">
 						<div class="follow">
-							<div>
+							<div class="follow-profile">
 								<div id="name">Nguyễn Thị Bảo Trân</div>
 								<div class="rating-love ">
      								<span class="fa fa-heart full"></span>
@@ -100,7 +110,7 @@
 								    <span class="fa fa-heart-o half"></span>
 								</div>   
 							</div>
-							<input type="checkbox"/>	
+							<input type="checkbox" name="">
 						</div>
 						<div class="donate">
 							<div>50,000 <span id="vnđ">đ/h</span></div>
@@ -136,12 +146,10 @@
 								      	<div class="surplus-rent padding-modal">
 									        <div>Số dư hiện tại</div>
 									        <div>0 <span>VNĐ</span></div>
-									        <div id="plus-rent">+</div>
+									        <div id="plus-rent"><button>+</button></div>
 									    </div>
 										<div class="add-message-rent padding-modal">
-								        <form id="add-message-rent">
-								          <input type="text" placeholder="Thêm lời nhắn">
-								        </form>
+								          <textarea class="add-mess1" placeholder="Thêm lời nhắn"></textarea>
 								      	</div>
 								      	<div class="rent-button padding-modal">
 								        	<button id="send-rent">Thuê</button>
@@ -190,14 +198,12 @@
 									      <div class="surplus padding-modal">
 									        <div>Số dư hiện tại</div>
 									        <div>0 <span>VNĐ</span></div>
-									        <div id="plus">+</div>
+									        <div id="plus"><button>+</button></div>
 									      </div>
 
 									  <!-- Add Message -->
 									      <div class="add-message padding-modal">
-									        <form id="add-message">
-									          <input type="text" placeholder="Thêm lời nhắn">
-									        </form>
+									        <textarea class="add-mess" placeholder="Thêm lời nhắn"></textarea>
 									      </div>
 									      <div class="donate-button padding-modal">
 									        <button id="send-donate">Donate</button>
@@ -253,6 +259,188 @@
 			<!-- Bottom -->
 			<div class="item-layout">
 
+				<!-- tab menu -->
+				<div class="container-tab">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Thông Tin Chung</a></li>
+    <li><a data-toggle="tab" href="#menu1">Giới Thiệu</a></li>
+    <li><a data-toggle="tab" href="#menu2">Top Donate</a></li>
+    <li><a data-toggle="tab" href="#menu3">Đánh giá</a></li>
+   
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    	<div class="flex-parameter tab1 tab1-flex">
+    		       <div class="tab1-item">
+    		       	   <div class="parameter">
+										<div class="name-parameter">Số người theo dõi</div>
+										<div class="number-parameter">320</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+						</div>
+						 <div class="parameter">
+										<div class="name-parameter">Tỷ lệ hoàn thành</div>
+										<div class="flex-skills">
+											<div class="container-skills">
+  												<div class="skills"></div>
+											</div>
+											<div>96<span>%</span></div>
+										</div>
+						</div>
+						
+    		       </div>
+    		       <div class="tab1-item">
+    		       	  
+						<div class="parameter">
+										<div class="name-parameter">Số giờ được thuê</div>
+										<div class="number-parameter">1862</div>
+									</div>
+									<div class="rectangle">
+										<img src="image/rectangle.svg">
+									</div>
+								
+								<div class="device">
+										<div class="name-parameter">Thiết bị</div>
+										<div>
+											<img src="image/camera.svg">
+											<img src="image/microphone.svg">
+										</div>
+									</div>
+    		       </div>
+									
+									
+									
+								</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+              
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
+						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+						<div class="image-introduce">
+							<img src="image/introduce1.png">
+							<img src="image/introduce2.png">
+							<img src="image/introduce3.png">
+							<img src="image/introduce4.png">
+							<img src="image/introduce5.png">
+							<a href=""><img src="image/introduce6.png"></a>
+						</div>			
+    </div>
+    <div id="menu2" class="tab-pane fade">			
+           <div class="top-donate">
+						
+						<div class="donation-order">
+							<div class="image-donate">
+								<div class="flex-image-donate">
+									<img src="image/top-donate1.png"><div class="name-top-donate">Linh Trần</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate2.png"><div class="name-top-donate">Toan Thien Tran</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate3.png"><div class="name-top-donate">Hữu Long</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate4.png"><div class="name-top-donate">Thùy Nguyễn</div>
+								</div>
+								<div class="flex-image-donate">
+									<img src="image/top-donate5.png"><div class="name-top-donate">Duong Le</div>
+								</div>
+							</div>
+
+							<div class="quantity-donate">
+								<div class="quantity-vietnam-dong" style="padding-left: 6px;">
+									350,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 4px;">
+									240,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 8px;">
+									120,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 13px;">
+									64,000 <div class="vietnam-dong">đ</div>
+								</div>
+								<div class="quantity-vietnam-dong" style="padding-left: 24px;">
+									8,000 <div class="vietnam-dong">đ</div>
+								</div>
+							</div>
+						</div>
+					</div>
+    </div>
+    <div id="menu3" class="tab-pane fade">			
+             <div class="evaluate">
+					
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Linh Trần</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right2.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Thiện Nguyễn</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						<div class="contant-evaluate">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-evaluate">
+								<div class="flex-evaluate">
+									<div class="name-evaluate">Jimmny Huỳnh</div>
+									<div class="reviews-evaluate">
+										<img src="image/rating.svg">
+									</div>
+								</div>
+								<div class="flex-evaluate">
+									<div class="time-evaluate">19/01/2021 - 20:32</div>
+									<div class="time-evaluate">Thuê 2h</div>
+								</div>
+								<div class="text-evaluate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+							</div>
+						</div>
+
+						
+
+						
+
+						<div class="pagination">
+						  <a href="#"><img src="image/left.svg"></a>
+						  <a class="active" href="#">1</a>
+						  <a href="#">2</a>
+						  <a href="#">...</a>
+						  <a href="#">8</a>
+						  <a href="#" class="larger-sign"><img src="image/right.svg"></a>
+						</div>
+					</div>
+    </div>
+    
+  </div>
+  </div>
+  <!-- end tab -->
 												<!-- Frame1 -->
 				<div class="frame1">
 <!-- Introduce -->
@@ -261,13 +449,12 @@
 						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </div>
 						<div class="text-introduce">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
 						<div class="image-introduce">
-							<img src="image/introduce1.png" class="padding-img">
-							<img src="image/introduce2.png" class="padding-img">
-							<img src="image/introduce3.png" class="padding-img">
+							<img src="image/introduce1.png">
+							<img src="image/introduce2.png">
+							<img src="image/introduce3.png">
 							<img src="image/introduce4.png">
 							<img src="image/introduce5.png">
-							<img src="image/introduce6.png">
-							<div id="image-increase">+4</div>
+							<a href=""><img src="image/introduce6.png"></a>
 						</div>
 					</div>
 
@@ -449,7 +636,10 @@
 							</div>
 						</div>
 						<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
-						<img src="image/image-layout-top1.png">
+						<div class="layout-top">
+							<img src="image/image-layout-top1.png">
+						</div>
+						
 						<div class="heart">
 							<img src="image/heart.svg">
 							<div><span>15</span> người thích bài viết này</div>
@@ -473,11 +663,26 @@
 						</div>
 						<div class="text-layout-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
 						<div class="image-layout-center">
-							<img src="image/image-layout-bottom1-1.png" class="padding-bottom-image">
-							<img src="image/image-layout-bottom2-2.png" class="padding-bottom-image">
-							<img src="image/image-layout-bottom3-3.png" class="padding-image">
-							<img src="image/image-layout-bottom4-4.png" class="padding-image">
-							<img src="image/image-layout-bottom5-5.png">
+							<div class="image-bottom-top">
+									<div class="image-top">
+										<img src="image/image-layout-bottom1-1.png">
+									</div>
+									<div class="image-top">
+										<img src="image/image-layout-bottom2-2.png">
+									</div>
+								</div>
+
+								<div class="image-bottom-bottom">
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom3-3.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom4-4.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom5-5.png">
+									</div>
+								</div>
 						</div>
 						<div class="heart">
 							<img src="image/heart.svg">
@@ -500,7 +705,10 @@
 						</div>
 					</div>
 					<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
-					<img src="image/image-layout-top2.png">
+					<div class="layout-top">
+						<img src="image/image-layout-top2.png">
+					</div>
+					
 					<div class="heart">
 						<img src="image/heart.svg">
 						<div><span>15</span> người thích bài viết này</div>
@@ -521,3 +729,13 @@
 <script src="library/js/modal.js"></script>
 </body>
 </html>
+
+  
+  
+  
+
+  
+
+
+
+

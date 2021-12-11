@@ -73,6 +73,10 @@ ul>li>a{
 .menu a{
 	position: relative;
 }
+#text>div:nth-child(1){
+	font-size: 16px;
+	font-weight: bold;
+}
 .menu a:after{
 	content: '';
 	width: 48px;
@@ -88,6 +92,10 @@ ul>li>a{
 .menu a:hover:after{
 	display: block;
 }
+.menu a:hover{
+	color: rgba(101, 1, 7, 0.6);
+	text-decoration: none;
+}
 .menu a:focus:after{
 	display: block;
 }
@@ -99,6 +107,18 @@ ul>li>a{
 	line-height: 24px;
 	letter-spacing: 0.012em;
 	color: #FE616B;
+}
+#hire-players:after{
+	content: '';
+	width: 48px;
+	height: 4px;
+	background: #FE616B;
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 8px 8px 0px 0px;
+	display: block;
 }
 .dropdown{
 	display: flex;
@@ -121,34 +141,3 @@ ul>li>a{
 	padding-right: 85px;
 }
 
-		/*Media Query*/
-@media only screen and (max-width: 700px) {
-  body {
-    width: 700px;
-  }
-/*Media Header*/
-  .sc-header{
-  	max-width: 700px;
-  	padding-left: 20px;
-  }
-  .item{
-  	margin-left: 50px;
-  }
-  .contact-us-profile{
-  	margin-right: 50px;
-  	margin-top: 35px;
-  }
-  .flex-banner{
-  	display: block;
-  }
-/*Media Layout*/
-  .frame1{
-  	display: none;
-  }
-  .frame3{
-  	display: none;
-  }
-  .frame2{
-  	width: 100%;
-  }
-}

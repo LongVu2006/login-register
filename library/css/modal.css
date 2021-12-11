@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 18px;
 }
 #name-donate{
   font-style: normal;
@@ -119,7 +119,8 @@
   justify-content: flex-end;
   margin-bottom: 22px;
 }
-#plus{
+#plus>button{
+  background: #fff;
   border: 1px solid #FE616B;
   padding: 10px;
   border-radius: 100%;
@@ -157,15 +158,31 @@
   color: rgba(101, 1, 7, 0.6);
   opacity: 0.5;
 }
-#add-message>input[type=text]{
-  padding: 10px 460px 66px 16px;
+.add-mess{
+  padding-top: 10px;
+  padding-left: 16px;
+  max-width: 580px;
+  height: 96px;
   background: #FFFFFF;
   border: 1px solid #E8E8E8;
   border-radius: 8px;
-  max-width: 100%;
+  width: 100%;
+  margin-bottom: 24px;
+  resize: none;
+  color: rgba(101, 1, 7, 0.32);
+  caret-color:  rgba(101, 1, 7, 0.32);
+}
+textarea:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FE616B;
+  outline: none;
+  padding-top: 10px;
+  padding-left: 16px;
   margin-bottom: 24px;
 }
-#add-message>input[type=text]::placeholder {
+.add-mess::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -188,6 +205,7 @@
   color: #FFFFFF;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 /* The Modal (background) */
@@ -218,6 +236,7 @@
   color: #650107;
   font-size: 40px;
   font-weight: bold;
+  line-height: 20px;
 }
 
 .close:hover,

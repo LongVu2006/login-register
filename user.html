@@ -4,6 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
+	<!-- css tab -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- end css tab -->
 	<link rel="icon" href="image/logo.png">
 	<link rel="stylesheet" href="library/css/banner.css">
 	<link rel="stylesheet" href="library/css/dropdown.css">
@@ -106,8 +111,75 @@
 
 
 	<div class="sc-layout">
-		<div class="container-layout">
+		<div class="container container-layout">
 				<div class="flex-layout">
+					 <div class="container tab">
+ 
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Top Đại Gia Tuần</a></li>
+    <li><a data-toggle="tab" href="#menu1">Trò Chuyện</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+    	           <div class="rick-top">
+						<div class="rick-week">
+							<div class="text-rick">ĐẠI GIA TUẦN</div>
+							<div class="rick-image"><img src="image/rick-week.png"></div>
+						</div>
+						<div class="rick-week">
+							<div class="text-rick">ĐẠI GIA THÁNG</div>
+							<div class="rick-image"><img src="image/rick-month.png"></div>
+						</div>
+				    </div>
+				    <div class="rick-bottom">
+						<div class="rick">
+							<div class="text-rick">ĐẠI GIA</div>
+							<div class="rick-image"><img src="image/rick.png"></div>
+						</div>
+					</div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      
+					
+					<div class="content-conversation">
+								<!-- Div1 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">12 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore tempor incididunt ut labore</div>
+							</div>
+						</div>
+								<!-- Div2 -->
+						<div class="conversation">
+							<div><img src="image/image-frame-right1.png"></div>
+							<div class="contant-text-conversation">
+								<div class="flex-conversation">
+									<div class="name-conversation">LinhTranDang</div>
+									<div class="time-coversation">8 phút trước</div>
+								</div>
+								<div class="text-conversation">Lorem ipsum dolor sit amet, consectetur</div>
+							</div>
+						</div>
+						
+								<!-- Div5 -->
+						<div class="conversation">
+							<form class="form-coversation">
+								<input type="text" placeholder="Nhập tin nhắn...">
+								<img src="image/send.png">
+							</form>
+						</div>
+					
+				</div>
+    </div>
+    
+  </div>
+</div>
 									<!-- Frame1 -->
 					<div class="frame1">
 						<div class="rick-week">
@@ -135,7 +207,7 @@
 								</div>
 							</div>
 							<div class="text-layout-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
-							<img src="image/image-layout-top.png">
+							<div class="image-layout-top"><img src="image/image-layout-top.png" style="width: 100%;" ></div>
 							<div class="heart">
 								<img src="image/heart.svg">
 								<div><span>15</span> người thích bài viết này</div>
@@ -149,7 +221,6 @@
 						</div>
 
 						<div class="frame-layout-bottom">
-							<div class="frame-layout-bottom">
 									<!-- Content Layout -->
 							<div class="flex-layout-bottom">
 								<div><img src="image/people.svg"></div>
@@ -160,11 +231,26 @@
 							</div>
 							<div class="text-layout-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
 							<div class="image-layout-bottom">
-								<img src="image/image-layout-bottom1.png">
-								<img src="image/image-layout-bottom2.png">
-								<img src="image/image-layout-bottom3.png" class="padding-image">
-								<img src="image/image-layout-bottom4.png" class="padding-image">
-								<img src="image/image-layout-bottom5.png">
+								<div class="image-bottom-top">
+									<div class="image-top">
+										<img src="image/image-layout-bottom1.png">
+									</div>
+									<div class="image-top">
+										<img src="image/image-layout-bottom2.png">
+									</div>
+								</div>
+
+								<div class="image-bottom-bottom">
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom3.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom4.png">
+									</div>
+									<div class="image-bottom">
+										<img src="image/image-layout-bottom5.png">
+									</div>
+								</div>
 							</div>
 							<div class="heart">
 								<img src="image/heart.svg">
@@ -177,8 +263,9 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					
 				</div>
+
 							<!-- Frame3 -->
 				<div class="frame3">
 					<div id="conversation"><h4>TRÒ CHUYỆN</h4></div>
@@ -236,10 +323,9 @@
 						</div>
 					</div>
 				</div>
-				
 		</div>
 	</div>
-	
+</div>
 	<!-- End sc-layout -->
 
 <script type="text/javascript">

@@ -37,4 +37,7 @@ border:none;
 }
 
 .pagination a:hover:not(.active) {
+  background: #FE616B;
+  border: 1px solid cyan;
+  color: #FFF;
 }

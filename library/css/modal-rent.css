@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 18px;
 }
 #name-rent{
   font-style: normal;
@@ -130,7 +130,8 @@
   justify-content: flex-end;
   margin-bottom: 22px;
 }
-#plus-rent{
+#plus-rent>button{
+  background: #fff;
   border: 1px solid #FE616B;
   padding: 10px;
   border-radius: 100%;
@@ -142,6 +143,7 @@
   color: #FE616B;
   font-weight: bold;
   font-size: 16px;
+  cursor: pointer;
 }
 .surplus-rent>div:nth-child(1){
   font-style: normal;
@@ -168,16 +170,31 @@
   color: rgba(101, 1, 7, 0.6);
   opacity: 0.5;
 }
-#add-message-rent>input[type=text]{
-  padding: 10px 460px 66px 16px;
+.add-mess1{
+  padding-top: 10px;
+  padding-left: 16px;
+  max-width: 580px;
+  height: 96px;
   background: #FFFFFF;
   border: 1px solid #E8E8E8;
   border-radius: 8px;
-  width: 104px;
-  height: 20px;
+  width: 100%;
+  margin-bottom: 24px;
+  resize: none;
+  color: rgba(101, 1, 7, 0.32);
+  caret-color:  rgba(101, 1, 7, 0.32);
+}
+textarea:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #FE616B;
+  outline: none;
+  padding-top: 10px;
+  padding-left: 16px;
   margin-bottom: 24px;
 }
-#add-message-rent>input[type=text]::placeholder {
+.add-mess1::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -198,6 +215,7 @@
   color: #FFFFFF;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 .button {
   border: none;
@@ -214,7 +232,7 @@
   letter-spacing: 0.012em;
   color: #FFFFFF;
   cursor: pointer;
-  margin-right: 4px;
+  margin-right: 8px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -236,6 +254,7 @@
   opacity: 0;
   overflow: auto;
   padding-top: 100px;
+  z-index: 1;
 }
 .overlay:target {
   visibility: visible;
@@ -247,7 +266,12 @@
   border-radius: 24px;
   margin: auto;
   max-width: 628px;
-  transition: all 5s ease-in-out;
+  width: 100%;
+  transition: all 1.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .popup .popup-close {
   transition: all 200ms;
@@ -255,6 +279,7 @@
   color: #650107;
   font-size: 40px;
   font-weight: bold;
+  line-height: 20px;
 }
 .popup-close:hover,
 .popup-close:focus {
