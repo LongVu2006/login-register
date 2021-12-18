@@ -18,6 +18,8 @@
 	<link rel="stylesheet" href="library/css/pagination.css">
 	<link rel="stylesheet" href="library/css/modal.css">
 	<link rel="stylesheet" href="library/css/modal-rent.css">
+	<link rel="stylesheet" href="library/css/toggle-menu.css">
+	<link rel="stylesheet" href="library/css/message.css">
 </head>
 <body>
 			<!-- Div tổng -->
@@ -86,8 +88,36 @@
 								</div>
 							</div>
 						</div>
+						<!-- Toggle Menu -->
+					<div class="hamburger-menu">
+				    <input id="menu__toggle" type="checkbox" />
+				    <label class="menu__btn" for="menu__toggle">
+				      <span></span>
+				    </label>
+				    <div class="menu__box">
+				    	<div class="padding__box">
+					    	<div class="image__box">
+						    	<div><img src="image/togglemenu.svg"></div>
+						    	<div class="text__box__menu">
+						    		<div>HoangNguyen</div>
+						    		<div>15,000 <span>đ</span></div>
+						    	</div>
+					    	</div>
+						    <ul>
+									<li><a class="menu__item border" href="#">Trang chủ</a></li>
+									<li><a class="menu__item border" href="#">Thuê người chơi</a></li>
+									<li><a class="menu__item" href="#">Đang theo dõi</a></li>
+						    </ul>
+					    </div>
+					    <div class="button__menu_toggle">
+					    	<button>Đăng Xuất</button>
+					    </div>
+				  	</div>
+				  </div>
+		  	<!-- End Toggle Menu -->
 					</div>
 												<!-- End Contact -->
+
 				</div>
 			</div>
 		</div>
@@ -212,7 +242,50 @@
 									</div>
 								</div>
 <!-- Message -->
-									<button id="message">Nhắn tin</button>
+								<div>
+									<button class="message" onclick="window.location.href='#chatbox'">Nhắn tin</button>
+									<div id="chatbox" class="chatbox">
+										<div class="chat__window">
+											<div class="header__chat">
+												<div class="name_image">
+													<img src="image/people__chat.svg">
+													<div>Nguyễn Đình Trần Thiện</div>
+												</div>
+												<a class="chat__close" href="#">&times;</a>
+											</div>
+
+											<div class="layout__chat">
+												<div class="people__chat">
+													<img src="image/people__chat.svg">
+													<div class="text__people">
+														<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+														<div>22/10/2020 | 08:32</div>
+													</div>
+												</div>
+
+												<div class="me__chat">
+													<img src="image/you__chat.svg">
+													<div class="text__me">
+														<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+														<div>25/12/2020 | 10:55</div>
+													</div>
+												</div>
+
+												<div class="send__chat">
+													<div class="text__send">
+														<img src="image/you__chat.svg">
+														<input type="text" name="" placeholder="Nhập tin nhắn">
+													</div>
+													<div class="link__send">
+														<a href=""><img src="image/link.svg"></a>
+														<a href=""><img src="image/planes.svg" id="plane"></a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+									<!-- End Message -->
 								</div>
 
 								<div class="flex-parameter">
